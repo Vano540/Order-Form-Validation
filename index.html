@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Page</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Skateboard</h1>
+        <img src="skate.jpeg" id="skate">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="0">
+        <label for="color">Color:</label>
+        <select id="color">
+            <option value="--">--</option>
+            <option value="white">White</option>
+            <option value="grey">Grey</option>
+            <option value="black">Black</option>
+        </select>
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+        <label for="city">City:</label>
+        <input type="text" id="city">
+        <label for="state">State:</label>
+        <input type="text" id="state" placeholder="abbreviation">
+        <button onclick="checkForm()" id="submit">Submit Order</button>
+        <h2 class="hidden" id="status">Order Submitted!</h2>
+    </body>
+</html>
